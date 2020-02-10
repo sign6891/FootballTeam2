@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_foto_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="4dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/tv_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/iv_foto_user"
+            android:text="@string/text_name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_user"
+            android:layout_toEndOf="@id/iv_foto_user"
+            android:text="@string/text_position"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+             />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
